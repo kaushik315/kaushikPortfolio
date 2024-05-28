@@ -21,40 +21,40 @@ const dataabout = {
     aboutme: "Welcome to my portfolio! I am Kaushik Chandrasekhar, a versatile computing professional currently based in Edinburgh, United Kingdom. I hold a Master of Science in Computing from Edinburgh Napier University and a Master of Science in Data Analytics from De Montfort University, complemented by a Bachelor of Science in Computer Application from VLB Janakiammal College of Arts and Science. My educational journey has equipped me with a robust foundation in both web application development and data analytics, enabling me to tackle complex challenges with innovative solutions. Throughout my academic and professional career, I have honed my skills in various programming languages and frameworks. I specialize in web application development using the MERN stack, HTML, PHP, CSS, ASP.NET, and Java. My proficiency extends to Python scripting, which I use for a variety of tasks including automation and data analysis. My data analytics expertise is underscored by my ability to perform data exploration, cleansing, and visualization using tools such as SAS, Excel, and Tableau. I have applied these skills in several projects, including my dissertation on customer behavior with regard to online advertising, and a study on crime rate changes during the COVID-19 pandemic in the West Midlands Police jurisdiction. In addition to my technical skills, I have a range of professional experiences that highlight my adaptability and commitment to community involvement. As the Treasurer of the Edinburgh Napier Mountain Bike Club, I manage the club's finances and organize events. My volunteer work at the UCI World Downhill Championship and my role as a Bank Care Officer at Linkfield Residential Ltd demonstrate my ability to work effectively in diverse environments and my dedication to helping others. My career in digital strategy at Techno Software’s Integr Sdn Bhd involved optimizing search engines, managing local business listings, and creating social media handles for businesses. These roles have sharpened my strategic thinking and digital marketing capabilities. I invite you to explore my portfolio to see examples of my work and learn more about my professional journey. Whether through developing web applications, analyzing complex data sets, or volunteering in my community, I strive to make a meaningful impact in every endeavor I undertake. Thank you for visiting my portfolio, and I look forward to connecting with you.",
 };
 const worktimeline = [{
-        jobtitle: "Designer of week",
-        where: "YAdfi",
-        date: "2020",
+        jobtitle: "Part Time Bank Care Officer",
+        where: "Linkfiled Residential",
+        date: "2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "Jamalya",
-        date: "2019",
+        jobtitle: "Treasurer",
+        where: "Edinburgh Napier Mountain Bike Club (NMTB)",
+        date: "2024",
     },
     {
-        jobtitle: "Designer of week",
-        where: "ALquds",
-        date: "2019",
+        jobtitle: "Media Volunteer",
+        where: "UCI World Downhill Championship 2024",
+        date: "2024",
     },
 ];
 
 const skills = [{
-        name: "Python",
+        name: "Javascript",
         value: 90,
     },
     {
-        name: "Djano",
+        name: "React",
         value: 85,
     },
     {
-        name: "Javascript",
+        name: "Node",
         value: 80,
     },
     {
-        name: "React",
+        name: "MongoDB",
         value: 60,
     },
     {
-        name: "Jquery",
+        name: "ExpressJS",
         value: 85,
     },
 ];
@@ -101,8 +101,13 @@ const dataportfolio = [
     },
     {
         img: "src/assets/images/bookMgmtApp.png",
-        description: "The wisdom of life consists in the elimination of non-essentials.",
-        link: "#",
+        description: "Food Delivery WebApp Clone",
+        link: "https://github.com/kaushik315/foodDelivery_html_php",
+    },
+    {
+        img: "src/assets/images/bookMgmtApp.png",
+        description: "Petition Filing WebApp Clone Using ASP.NET",
+        link: "https://github.com/kaushik315/petitionClone",
     }
     
 ];
