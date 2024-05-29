@@ -5,10 +5,13 @@
     column-gap: 4rem;
     -moz-column-gap: 4rem;
     -webkit-column-gap: 4rem;
-}
-
-.po_item {
-    display: inline-block;
+  }
+  
+  .po_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     text-align: center;
     margin: 0.5rem auto;
@@ -18,17 +21,21 @@
     border: 1px solid var(--secondary-color);
     transition: 0.3s ease;
     font-size: 0;
-    min-height: 300px;
-}
-
-.po_item img {
+    height: 100%;
+  }
+  
+  .po_item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
     max-width: 100%;
-}
-
-.po_item .content {
+    margin: 0 auto;
+    display: block;
+  }
+  .po_item.content {
     position: absolute;
-    height: 0;
-    width: 0;
+    height: 100%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -38,57 +45,69 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 100%;
     transition: 0.3s ease-in-out;
     opacity: 0;
     border: 1px solid black;
-}
-
-.po_item .content {
+  }
+  
+  .po_item.content {
     opacity: 0;
     transition-delay: 1s;
     transition: 0.3s ease;
     font-size: 20px;
-}
-
-.po_item:hover {
+  }
+  
+  .po_item:hover {
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
-}
-
-.po_item:hover .content {
+  }
+  
+  .po_item:hover.content {
     height: calc(100% - 30px);
     width: calc(100% - 30px);
     opacity: 1;
-}
-
-.po_item:hover .content {
+  }
+  
+  .po_item:hover.content {
     opacity: 1;
     color: var(--secondary-color);
-}
-
-.po_item .content a {
+  }
+  
+  .po_item.content a {
     background: var(--bg-color);
     border: solid 1px var(--text-color);
     padding: 4px 8px;
     text-align: center;
     font-size: 1rem;
-}
-
-.po_item .content a:hover {
+  }
+  
+  .po_item.content a:hover {
     text-decoration: none;
-}
-
-.git-btn {
+  }
+  
+  .git-btn {
     display: flex;
     align-items: center;
     margin-top: 10px;
   }
-
+  
   .service_image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border: 1px solid #ddd; /* Optional: Add border for styling */
-    border-radius: 4px; /* Optional: Rounded corners */
-    margin-right: 10px; /* Space between image and button */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 20px auto; /* Add some margin to center the image */
+    display: block;
+    
+  }
+  
+  /* Add media query for mobile responsiveness */
+  @media only screen and (max-width: 768px) {
+   .po_item img {
+      width: 100%;
+      height: auto;
+    }
+   .service_image {
+      width: 100%;
+      height: auto;
+    }
   }

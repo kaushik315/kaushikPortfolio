@@ -43,10 +43,9 @@ export const Portfolio = () => {
                   </h5>
                   {activeService === i && (
                     <><div className="service_image">
-                      <img src={data.img} alt={data.description} /> <br></br>
-                    </div>
-                    {data.descFull}
-                    <div className="git-btn">
+                      <img src={data.img} alt={data.description} />
+
+                    </div><p>{data.descFull}</p><div className="git-btn">
                         <Link to={data.link} className="text_2">
                           <div id="button_p" className="ac_btn btn ">
                             Go To Github
