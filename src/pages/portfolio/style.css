@@ -78,3 +78,17 @@
 .po_item .content a:hover {
     text-decoration: none;
 }
+
+.git-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .service_image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; /* Optional: Add border for styling */
+    border-radius: 4px; /* Optional: Rounded corners */
+    margin-right: 10px; /* Space between image and button */
+  }

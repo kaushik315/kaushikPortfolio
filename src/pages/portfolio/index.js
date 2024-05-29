@@ -42,16 +42,20 @@ export const Portfolio = () => {
                     {data.description}
                   </h5>
                   {activeService === i && (
-                    <div class="git-btn">
-                    <Link to={data.link} className="text_2">
-                    <div id="button_p" className="ac_btn btn ">
-                      Go To Github
-                      <div className="ring one"></div>
+                    <><div className="service_image">
+                      <img src={data.img} alt={data.description} /> <br></br>
                     </div>
-                  </Link>
-                  </div>
+                    {data.descFull}
+                    <div className="git-btn">
+                        <Link to={data.link} className="text_2">
+                          <div id="button_p" className="ac_btn btn ">
+                            Go To Github
+                          </div>
+                        </Link>
+                      </div></>
                   )}
                 </div>
+                
               );
             })}
           </Col>
