@@ -57,7 +57,7 @@ export const Socialicons = (params) => {
           </li>
         )} */}
       </ul>
-      <p>Follow us</p>
+      <p>socials</p>
     </div>
   );
 };
