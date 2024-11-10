@@ -58,6 +58,7 @@ export const Home = () => {
                     </div>
                   </Link>
                 </div>
+                <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/05a3525e-a9a5-4521-a107-9b645080e43f"></iframe>
                 <Socialicons />
               </div>
             </div>
